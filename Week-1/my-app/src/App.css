@@ -1,4 +1,21 @@
-.App {
+ul{
+  text-align: left;
+  margin-top: 200px;
+}
+
+li {
+  list-style-type: none;
+
+}
+
+body {
+  background-color: #0005;
+}
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +52,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
