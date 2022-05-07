@@ -3,7 +3,7 @@ const TodoList = () => {
         <ul>
             <h2>List of Todos</h2>
             <li>
-                <input type='checkbox' id='td-1' />
+                <input type='checkbox' name='td-1' />
                 <label for='todo-1'>Go To Gym</label>
             </li>
             <li>
