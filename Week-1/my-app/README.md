@@ -1,5 +1,15 @@
 # Getting Started with Create React App
 
+
+
+# React practice
+
+*The start to using React making an unordered list in the form of a Todo List*
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
