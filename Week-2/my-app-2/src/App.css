@@ -1,19 +1,15 @@
-ul{
-  text-align: left;
-  margin-top: 200px;
+ul {
+    text-align: left;
+    /* margin-top: 200px; */
 }
 
 li {
-  list-style-type: none;
-
+    list-style-type: none;
 }
 
 body {
-  background-color: #0005;
+    background-color: #0005;
 }
-
-
-
 
 /* .App {
   text-align: center;
