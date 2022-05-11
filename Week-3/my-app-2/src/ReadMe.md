@@ -1,7 +1,7 @@
  READ ME
 
 
-(files description)
+(Files Description)
 App.js,
 Header.js,
 ( Content.js passed to TodoListItems.js passed to LineItems.js ),
