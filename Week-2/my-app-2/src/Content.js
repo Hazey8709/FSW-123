@@ -5,11 +5,14 @@ const Todos2 = ({ items, handleCheck, handleDelete }) => {
         <header>
             {/*//! Empty List (Saying Empty) */}
             {items.length ? (
-                <TodoListItems
-                    items={items}
-                    handleCheck={handleCheck}
-                    handleDelete={handleDelete}
-                />
+                <>
+                    <TodoListItems
+                        items={items}
+                        handleCheck={handleCheck}
+                        handleDelete={handleDelete}
+                    />
+                    <p>&copy; 2022, Jordan Fortin</p>
+                </>
             ) : (
                 <h1 style={{ margin: "5px" }}>Your List is EMPTY!</h1>
             )}
