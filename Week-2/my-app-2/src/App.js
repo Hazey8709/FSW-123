@@ -1,12 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
+//! TodoList.js 
 import TodoList from "./todoList";
 import Header from "./header";
-import Todos2 from "./store";
+import Todos2 from "./Content";
 import { useState } from "react";
 import Footer from "./Footer";
 
-function App() {
+function App()
+{
+    //! UseState  (item, setItems)
     const [items, setItems] = useState([
         {
             name: "Practice code",
@@ -30,6 +32,7 @@ function App() {
         // console.log(`key: ${id}`);
     };
 
+    //! Delete Handler
     const handleDelete = (id) => {
         const listItems = items.filter((item) => item.id !== id);
         setItems(listItems);
