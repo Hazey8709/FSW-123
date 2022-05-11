@@ -1,14 +1,13 @@
 import "./App.css";
-//! TodoList.js 
+//! TodoList.js
 import TodoList from "./todoList";
 import Header from "./header";
 import Todos2 from "./Content";
 import { useState } from "react";
 import Footer from "./Footer";
 
-function App()
-{
-    //! UseState  (item, setItems)
+function App() {
+    //! UseState  (items, setItems)
     const [items, setItems] = useState([
         {
             name: "Practice code",
