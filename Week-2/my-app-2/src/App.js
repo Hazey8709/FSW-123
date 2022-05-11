@@ -1,16 +1,53 @@
 import logo from "./logo.svg";
 import "./App.css";
 import TodoList from "./todoList";
-import  Todos  from "./store";
-import Todos_2 from "./store";
+import Header from "./header";
+import Todos2 from "./store";
+import { useState } from "react";
+import Footer from "./Footer";
 
 function App() {
+    const [items, setItems] = useState([
+        {
+            name: "Practice code",
+            id: 20,
+            description: "practice",
+            checked: false,
+        },
+        { name: "Practice HTML", id: 21, description: "HTML", checked: true },
+        { name: "Practice JS", id: 22, description: "JS", checked: false },
+        { name: "Practice CSS", id: 23, description: "CSS", checked: false },
+    ]);
+
+    //!  Checkbox Handler
+    const handleCheck = (id) => {
+        const listItems = items.map((item) =>
+            item.id === id ? { ...item, checked: !item.checked } : item
+        );
+        setItems(listItems);
+        //! Local Storage in todosStorage.json
+        localStorage.setItem("todosStorage", JSON.stringify(listItems));
+        // console.log(`key: ${id}`);
+    };
+
+    const handleDelete = (id) => {
+        const listItems = items.filter((item) => item.id !== id);
+        setItems(listItems);
+        //! Local Storage in todosStorage.json
+        localStorage.setItem("todosStorage", JSON.stringify(listItems));
+        // console.log(id);
+    };
+
     return (
         <div className='App'>
-            <TodoList />
-
-            <Todos_2 />
-
+            <Header title='Todo List' />
+            {/* <TodoList /> */}
+            <Todos2
+                items={items}
+                handleCheck={handleCheck}
+                handleDelete={handleDelete}
+            />
+            <Footer length={items.length} />
         </div>
     );
 }

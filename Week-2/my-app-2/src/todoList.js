@@ -3,7 +3,6 @@ import { FaTrashAlt } from "react-icons/fa";
 const TodoList = () => {
     return (
         <ul>
-            <h2>List of Todos</h2>
             <li>
                 <input type='checkbox' name='td-1' />
                 <label for='todo-1'>Go To Gym</label>
