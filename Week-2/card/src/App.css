@@ -1,23 +1,22 @@
 /*!     Card CSS     */
 
-/* .wrapper {
+.wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, min(130px));
     gap: 10px;
     margin-top: 50px;
     margin-left: 5px;
     text-align: center;
-} */
+}
 
 .card {
     display: flex;
-    /* flex-direction: column;
+    flex-direction: column;
     justify-content: space-between;
     border: 2px solid black;
     border-radius: 10px;
-    background-color: red; */
+    /* background-color: red; */
     text-align: center;
-
 }
 
 .cardContainer-1 {
@@ -29,7 +28,6 @@
     margin-top: 200px;
     margin-left: 10px;
     box-shadow: 0 5px 20px black;
-
 }
 
 .cardContainer-2 {
@@ -44,25 +42,25 @@
 }
 
 .cardContainer-3 {
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: yellow;
-  width: 100px;
-  padding: 10px;
-  margin-top: 200px;
-  margin-left: 5px;
-  box-shadow: 0 5px 20px black;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: yellow;
+    width: 100px;
+    padding: 10px;
+    margin-top: 200px;
+    margin-left: 5px;
+    box-shadow: 0 5px 20px black;
 }
 
 .cardContainer-4 {
-  border: 2px solid black;
-  border-radius: 10px;
-  background-color: green;
-  width: 100px;
-  padding: 10px;
-  margin-top: 200px;
-  margin-left: 5px;
-  box-shadow: 0 5px 20px black;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: green;
+    width: 100px;
+    padding: 10px;
+    margin-top: 200px;
+    margin-left: 5px;
+    box-shadow: 0 5px 20px black;
 }
 
 body {
