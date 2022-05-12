@@ -3,14 +3,19 @@ import "./App.css";
 import Card from "./card";
 
 function App() {
+    const IsBgColorRed = true;
+
     return (
         <div className='wrapper'>
-
-            <div className='cardContainer-1'>
+            <div
+                className={IsBgColorRed ? "background-red" : "background-blue"}>
                 <Card
                     title='Title-1'
                     subTitle='Sub Title-1'
                     description='Hello World-1'
+                    // className={
+                    //     IsBgColorRed ? "background-red" : "background-blue"
+                    // }
                 />
             </div>
 
@@ -37,7 +42,6 @@ function App() {
                     description='Hello World-4'
                 />
             </div>
-            
         </div>
     );
 }

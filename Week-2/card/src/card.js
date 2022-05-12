@@ -6,7 +6,6 @@ const Card = (props) => {
     return (
         <div className='card'>
             <div className='cardBody'>
-                {/* {props.bgColor} */}
                 <h2 className='card-title'>{props.title}</h2>
                 <h4 className='card-subTitle'>{props.subTitle}</h4>
                 <hr />

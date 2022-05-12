@@ -1,4 +1,11 @@
 /*!     Card CSS     */
+.background-red {
+    background-color: red;
+}
+
+.background-blue {
+    background-color: blue;
+}
 
 .wrapper {
     display: grid;
