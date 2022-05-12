@@ -48,7 +48,7 @@ function App() {
 
 export default App;
 
-// //!  Second Way With colors changed
+// //!  Second Way With (colors changed in card.js by className)
 // import logo from "./logo.svg";
 // import "./App.css";
 // import Card from "./card";

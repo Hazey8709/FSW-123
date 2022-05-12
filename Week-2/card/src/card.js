@@ -1,6 +1,6 @@
 //!         Cards.JS   PAGE
 
-//! First Way to do it (But  couldn't change color  separately per card )
+//! First Way to do it (work in-progress )
 
 const Card = (props) => {
     return (
