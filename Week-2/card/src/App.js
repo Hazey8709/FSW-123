@@ -5,27 +5,39 @@ import Card from "./card";
 function App() {
     return (
         <div className='wrapper'>
-            <Card
-                title='Title-1'
-                subTitle='Sub Title-1'
-                description='Hello World-1'
-                // bgColor={{ backgroundColor: "blue" }}
-            />
-            <Card
-                title='Title-2'
-                subTitle='Sub Title-2'
-                description='Hello World-2'
-            />
-            <Card
-                title='Title-3'
-                subTitle='Sub Title-3'
-                description='Hello World-3'
-            />
-            <Card
-                title='Title-4'
-                subTitle='Sub Title-4'
-                description='Hello World-4'
-            />
+
+            <div className='cardContainer-1'>
+                <Card
+                    title='Title-1'
+                    subTitle='Sub Title-1'
+                    description='Hello World-1'
+                />
+            </div>
+
+            <div className='cardContainer-2'>
+                <Card
+                    title='Title-2'
+                    subTitle='Sub Title-2'
+                    description='Hello World-2'
+                />
+            </div>
+
+            <div className='cardContainer-3'>
+                <Card
+                    title='Title-3'
+                    subTitle='Sub Title-3'
+                    description='Hello World-3'
+                />
+            </div>
+
+            <div className='cardContainer-4'>
+                <Card
+                    title='Title-4'
+                    subTitle='Sub Title-4'
+                    description='Hello World-4'
+                />
+            </div>
+            
         </div>
     );
 }
