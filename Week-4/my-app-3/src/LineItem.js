@@ -11,16 +11,16 @@ const LineItem = ({ item, handleCheck, handleDelete }) => {
             />
             <label
                 style={
-                    item.checked
-                        ? { textDecoration: "line-through" }
-                        : //? Come back and fix to turn red with line-through
+                    item.checked ? { textDecoration: "line-through" } : null
 
-                          //?   { color: "red" }
-                          null
+                    //? Come back and fix to turn red with line-through
+                    //?   { color: "red" }
                 }
                 onDoubleClick={() => handleCheck(item.id)}>
-                ID:{item.id} Name: {item.name} Description:
-                {item.description}
+                {/* ID:{item.id} */}
+                Name: {item.name}
+                
+                Description: {item.description}
             </label>
 
             <button>Edit</button>

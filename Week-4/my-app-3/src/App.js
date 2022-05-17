@@ -1,23 +1,41 @@
 import "./App.css";
-//! TodoList.js
+//! TodoList.js (not called!)
 import TodoList from "./todoList";
 import Header from "./header";
 import Todos2 from "./Content";
-import { useState } from "react";
 import Footer from "./Footer";
+import { useState } from "react";
+
+const { v4: uuidv4 } = require("uuid");
+console.log(uuidv4());
 
 function App() {
-    //! UseState  (items, setItems)
+    //! UseState  (items, setItems) - (array)
     const [items, setItems] = useState([
         {
-            name: "Practice code",
-            id: 20,
-            description: "practice",
+            name: "Practice code ",
+            id: uuidv4(),
+            description: "practice ",
             checked: false,
         },
-        { name: "Practice HTML", id: 21, description: "HTML", checked: true },
-        { name: "Practice JS", id: 22, description: "JS", checked: false },
-        { name: "Practice CSS", id: 23, description: "CSS", checked: false },
+        {
+            name: "Practice HTML ",
+            id: uuidv4(),
+            description: "HTML ",
+            checked: true,
+        },
+        {
+            name: "Practice JS ",
+            id: uuidv4(),
+            description: "JS ",
+            checked: false,
+        },
+        {
+            name: "Practice CSS ",
+            id: uuidv4(),
+            description: "CSS ",
+            checked: false,
+        },
     ]);
 
     //!  Checkbox Handler
@@ -28,7 +46,6 @@ function App() {
         setItems(listItems);
         //! Local Storage in todosStorage.json
         localStorage.setItem("todosStorage", JSON.stringify(listItems));
-        // console.log(`key: ${id}`);
     };
 
     //! Delete Handler
