@@ -4,6 +4,7 @@ import TodoList from "./todoList";
 import Header from "./header";
 import Todos2 from "./Content";
 import Footer from "./Footer";
+import AddItem from "./AddItem";
 import { useState } from "react";
 
 const { v4: uuidv4 } = require("uuid");
@@ -38,6 +39,23 @@ function App() {
         },
     ]);
 
+    const [newItem, setNewItem] = useState("");
+
+    // const setSaveItems = ( newItems ) =>{
+    //     setItems(listItems);
+
+    //     localStorage.setItem("todosStorage", JSON.stringify(listItems));
+    // }
+
+    const addItem = (item) => {
+        const id = items.length ? items[items.length - 1].id + 1 : 1;
+        const myNewItem = { id, checked: false, item };
+        const listItems = { ...items, myNewItem };
+        setItems(listItems);
+
+        localStorage.setItem("todosStorage", JSON.stringify(listItems));
+    };
+
     //!  Checkbox Handler
     const handleCheck = (id) => {
         const listItems = items.map((item) =>
@@ -57,9 +75,23 @@ function App() {
         // console.log(id);
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (!newItem) return;
+        addItem("newItems");
+        setNewItem("");
+
+        console.log("submit Works");
+    };
+
     return (
         <div className='App'>
             <Header title='Todo List' />
+            <AddItem
+                newItem={newItem}
+                setNewItem={setNewItem}
+                handleSubmit={handleSubmit}
+            />
             {/* <TodoList /> */}
             <Todos2
                 items={items}
