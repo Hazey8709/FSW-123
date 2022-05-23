@@ -31,7 +31,12 @@ function App() {
     return (
         <div className='div-style'>
             <form className='form-style' onSubmit={handleForm}>
-                <input className='input-box' type='text' name='search' />
+                <input
+                    className='input-box'
+                    type='text'
+                    name='search'
+                    required
+                />
                 <button className='btn-style' type='submit'>
                     {" "}
                     Find Pic{" "}
