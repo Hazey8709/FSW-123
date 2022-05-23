@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 function App() {
     const [gif, setGif] = useState("");
 
-    const initialSearch = "baseball";
+    const initialSearch = "Doja Cat";
 
     const getGif = (findGif = initialSearch) => {
         console.log(findGif);
@@ -29,7 +29,7 @@ function App() {
     useEffect(getGif, []);
 
     return (
-        <div className="div-style">
+        <div className='div-style'>
             <form className='form-style' onSubmit={handleForm}>
                 <input className='input-box' type='text' name='search' />
                 <button className='btn-style' type='submit'>
@@ -43,29 +43,3 @@ function App() {
 }
 
 export default App;
-
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
