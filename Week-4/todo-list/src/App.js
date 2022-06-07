@@ -22,9 +22,6 @@ const App = () => {
     React.useEffect(() => {
         localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos));
     }, [todos]);
-    //     const temp = JSON.stringify(todos);
-    //     localStorage.setItem("todos", temp);
-    // }, [todos]);
 
     function handleSubmit(e) {
         e.preventDefault();
@@ -57,7 +54,7 @@ const App = () => {
         const updatedTodos = [...todos].map((todo) => {
             if (todo.id === id) {
                 todo.text = editingText;
-            }
+            } 
             return todo;
         });
         setTodos(updatedTodos);
