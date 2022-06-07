@@ -1,0 +1,31 @@
+.roll-dice__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    height: 300px;
+    border: 5px double rgb(7, 7, 7);
+    border-radius: 15px;
+    width: 400px;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: rgb(1, 150, 9);
+}
+
+button {
+    width: 10rem;
+    margin-top: 2rem;
+    background-color: rgb(15, 70, 15);
+    border: 2px solid black;
+    border-radius: 10px;
+    color: rgb(255, 254, 254);
+    height: 3rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+button:hover {
+    color: rgb(253, 4, 4);
+    text-decoration: underline;
+}
