@@ -164,7 +164,7 @@ const App = () => {
                     type='text'
                     name='address'
                     required='required'
-                    placeholder='Enter an addres...'
+                    placeholder='Enter an address...'
                     onChange={handleAddFormChange}
                 />
                 <input
